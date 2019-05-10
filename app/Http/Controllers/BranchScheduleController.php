@@ -49,7 +49,10 @@ class BranchScheduleController extends Controller
       $bsched->time_to = $req->time_to;
     	$bsched->save();
 
-      $bsched = BSched::select('id', 'time_from', 'time_to')
+      $bsched = BSched::select('id',
+                  'time_from',
+                  'time_to',
+                  \DB::raw("CONCAT(TIME_FORMAT(time_from, '%h:%i %p'),' - ',TIME_FORMAT(time_to, '%h:%i %p')) AS time"))
                   ->with(['branches' => function ($qry) {
                     $qry->select('bsched_id', 'name');
                   }])
@@ -86,7 +89,10 @@ class BranchScheduleController extends Controller
       $bsched->time_to = $req->time_to;
       $bsched->update();
 
-      $bsched = BSched::select('id', 'time_from', 'time_to')
+      $bsched = BSched::select('id',
+                'time_from',
+                'time_to',
+                \DB::raw("CONCAT(TIME_FORMAT(time_from, '%h:%i %p'),' - ',TIME_FORMAT(time_to, '%h:%i %p')) AS time"))
                 ->with(['branches' => function ($qry) {
                   $qry->select('bsched_id', 'name');
                 }])
