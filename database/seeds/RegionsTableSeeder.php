@@ -12,15 +12,15 @@ class RegionsTableSeeder extends Seeder
     public function run()
     {
         DB::table('regions')->insert([
-            'name' => 'South Luzon',
+            'name' => 'Region 1',
         ]);
 
         DB::table('regions')->insert([
-            'name' => 'North East Luzon',
+            'name' => 'Region 2',
         ]);
 
         DB::table('regions')->insert([
-            'name' => 'North West Luzon',
+            'name' => 'Region 3',
         ]);
     }
 }

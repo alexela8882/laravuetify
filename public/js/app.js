@@ -94333,7 +94333,7 @@ allRoutes = allRoutes.concat(_authRoutes__WEBPACK_IMPORTED_MODULE_3__["default"]
 var routes = allRoutes;
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
-  base: '/laravuetify/public/',
+  base: '/',
   routes: routes
 });
 router.beforeResolve(function (to, from, next) {
@@ -96931,8 +96931,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\laravuetify\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\laravuetify\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Lekz\Desktop\laravuetify\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Lekz\Desktop\laravuetify\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

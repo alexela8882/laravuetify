@@ -15,7 +15,7 @@ const routes = allRoutes
 
 const router = new VueRouter({
 	mode: 'history',
-	base: '/laravuetify/public/',
+	base: '/',
 	routes: routes
 })
 

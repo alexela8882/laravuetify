@@ -48,6 +48,7 @@ $ php artisan db:seed
 Lastly
 
 ```sh
+$ npm run dev
 $ php artisan serve
 ```
 
