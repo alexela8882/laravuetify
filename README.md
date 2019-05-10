@@ -23,7 +23,7 @@ $ npm install
 
 ## Configure Backend
 
-Cloning this project wont provide you a `.env` file. You can create using this command:
+Cloning this project won't provide you a `.env` file. You can create using this command:
 
 ```sh
 $ php -r "copy('.env.example', '.env');"
@@ -53,6 +53,5 @@ $ php artisan serve
 ```
 
 All Done!
-//asdasdsad
 
 You can now visit your website in [http://localhost:8000](http://localhost:8000).
