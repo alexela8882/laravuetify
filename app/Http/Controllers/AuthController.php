@@ -83,7 +83,7 @@ class AuthController extends Controller
                                     \DB::raw("CONCAT(first_name,' ',last_name) AS full_name"))
                            ->with('branch')
                            ->with(['employment' => function ($qry) {
-                             $qry->with('position');
+                             $qry->with('position')->with('department');
                            }])
                            ->where('id', $user->id)
                            ->first(),
