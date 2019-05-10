@@ -1,0 +1,67 @@
+04/06/19 13:32
+- Store module applied in store/index.js
+
+03/08/19
+- Full CRUD applied in both front-end and back-end
+
+04/10/19 11:58
+- Snackbar added
+
+04/16/19 15:33
+- Authentication using Laravel JWT auth
+
+04/17/19 15:43
+- Branch model, controller, migrations & views added
+- Branch added in Users.vue
+- Network Error & Model have child records error added in initailize function from helpers/general.js
+
+04/18/19
+- single delete in users and branches removed
+- Multiple deletion applied
+- Prevent deletion of model has child
+
+04/22/19
+- Multilevel Navigation List applied
+- Spatie for Laravel Roles & Permissions added
+- Roles & Permissions views, routes & controllers added
+
+04/23/19
+- Roles.vue updated; chips as permissions under roles
+
+04/24/19 14:00
+- Roles & Permissions in Users.vue added in table column
+
+04/24/19 14:41
+- Bug fixed in Users.vue; roleIds passed in editedUser
+
+04/25/19 15:00
+- Users, Branches, Roles & Permissions aligned with webportal
+- Roles & Permissions functionality applied
+- RolesDialog component added inside Users.vue
+  - Location: user/templates
+
+04/26/19 10:19
+- PermissionsDialog component added inside Roles.vue
+  - Location: roles/templates
+- v-autocomplete used in Roles.vue instead of v-select
+- v-autocomplete used in Users.vue instead of v-select
+
+04/26/19 10:38
+- Bug fixed in Users.vue; selected item v-model of checkbox
+
+04/26/19 13:57
+- Region model, controller, migrations, clearance & view added
+
+04/30/19 09:31
+- BranchSchedule model with migrations, controller, clearance, route, store & view added
+
+05/02/19 12:50
+- Multilevel list in menu applied
+- time_from & time_to time format changed to %h:%i %p
+
+05/03/19 16:29
+- Department & UserEmployment model with migrations, controller, clearance, route, store & view added
+
+05/07/19 11:00
+- schedule in Branches.vue changed format to %h:%i %p
+- User Position applied in Toolbar.vue
