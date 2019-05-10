@@ -54,7 +54,9 @@ class BranchController extends Controller
       $branch = new Branch;
       $branch->name = $req->name;
       $branch->region_id = $req->region;
-      $branch->bsched_id = $req->schedule;
+      if ($req->schedule) {
+        $branch->bsched_id = $req->schedule;
+      }
       $branch->machine_number = $req->machine_number;
       $branch->whscode = $req->whscode;
       $branch->bm_oic = $req->bm_oic;
@@ -82,8 +84,8 @@ class BranchController extends Controller
       $validator = Validator::make($req->all(), [
         'name' => 'required|unique:branches,name,'.$req->id,
         'region' => 'required',
-        'machine_number' => 'unique:branches,machine_number,'.$req->id,
-        'whscode' => 'unique:branches,whscode,'.$req->id,
+        'machine_number' => 'required|unique:branches,machine_number',
+        'whscode' => 'required|unique:branches,whscode,'.$req->id,
       ]);
 
       if ($validator->fails()) {
@@ -105,7 +107,9 @@ class BranchController extends Controller
       $branch = Branch::find($req->id);
       $branch->name = $req->name;
       $branch->region_id = $req->region;
-      $branch->bsched_id = $req->schedule;
+      if ($req->schedule) {
+        $branch->bsched_id = $req->schedule;
+      }
       $branch->machine_number = $req->machine_number;
       $branch->whscode = $req->whscode;
       $branch->bm_oic = $req->bm_oic;
