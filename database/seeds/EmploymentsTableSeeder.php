@@ -16,6 +16,7 @@ class EmploymentsTableSeeder extends Seeder
           'user_id' => 1,
           'branch_id' => 1,
           'department_id' => 1,
+          'position_id' => 1,
           'sss' => "123",
       ]);
     }
