@@ -55,21 +55,6 @@ class RoleClearance
       }
     }
 
-    // for users that requires roles
-    if ($request->route()->getName() === 'users') {
-      if (Auth::user()->hasPermissionTo('Show Roles')) {
-        return $next($request);
-      } else {
-        if (Auth::user()->hasAnyPermission('Create Users',
-                                           'Edit Users',
-                                           'Delete Users')) {
-          return $next($request);
-        } else {
-          return response()->json('Forbidden', 403);
-        }
-      }
-    }
-
     return $next($request);
   }
 }
