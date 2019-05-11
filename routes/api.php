@@ -83,7 +83,7 @@ Route::group(['prefix' => 'regions', 'middleware' => ['jwt.auth', 'region_cleara
 
 });
 
-Route::group(['prefix' => 'roles', 'middleware' => ['jwt.auth', 'authorization_clearance']], function () {
+Route::group(['prefix' => 'roles', 'middleware' => ['jwt.auth', 'role_clearance']], function () {
 
 	Route::get('/', 'RoleController@all')->name('roles');
 	Route::post('/', 'RoleController@store')->name('role.store');

@@ -11,6 +11,7 @@ use Validator;
 
 class RoleController extends Controller
 {
+
     public function all () {
     	$roles = Role::select('id', 'name')
                ->with('permissions')

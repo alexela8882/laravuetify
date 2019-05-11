@@ -11,8 +11,24 @@ class PermissionsTableSeeder extends Seeder
      */
     public function run()
     {
+        // Roles - Admin
         DB::table('permissions')->insert([
-            'name' => 'Administer roles & permissions',
+            'name' => 'Show Roles',
+            'guard_name' => 'api',
+        ]);
+
+        DB::table('permissions')->insert([
+            'name' => 'Create Roles',
+            'guard_name' => 'api',
+        ]);
+
+        DB::table('permissions')->insert([
+            'name' => 'Edit Roles',
+            'guard_name' => 'api',
+        ]);
+
+        DB::table('permissions')->insert([
+            'name' => 'Delete Roles',
             'guard_name' => 'api',
         ]);
 
