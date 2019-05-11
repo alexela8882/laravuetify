@@ -16,7 +16,11 @@ class BranchScheduleClearance
         } else {
           if (Auth::user()->hasAnyPermission('Create Branch Schedules',
                                              'Edit Branch Schedules',
-                                             'Delete Branch Schedules')) {
+                                             'Delete Branch Schedules',
+                                             'Show Branches',
+                                             'Create Branches',
+                                             'Edit Branches',
+                                             'Delete Branches')) {
             return $next($request);
           } else {
             return response()->json('Forbideen', 403);
