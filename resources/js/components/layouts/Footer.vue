@@ -3,7 +3,7 @@
 		<v-footer app inset absolute>
 	    <v-card class="flex" flat>
 	      <v-card-actions class="justify-center">
-	        &copy;&nbsp;{{ new Date().getFullYear() }} — <strong>&nbsp;Addessa Corporation</strong>
+	        &copy;&nbsp;{{ new Date().getFullYear() }} — <strong>&nbsp;Laravuetify</strong>
 	      </v-card-actions>
 	    </v-card>
 	  </v-footer>

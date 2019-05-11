@@ -43113,7 +43113,7 @@ var render = function() {
                 _vm._v(
                   "\n        © " + _vm._s(new Date().getFullYear()) + " — "
                 ),
-                _c("strong", [_vm._v(" Addessa Corporation")])
+                _c("strong", [_vm._v(" Laravuetify")])
               ])
             ],
             1
