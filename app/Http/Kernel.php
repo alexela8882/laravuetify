@@ -64,6 +64,7 @@ class Kernel extends HttpKernel
 
         // SPATIE PERMISSIONS
         'role_clearance' => \App\Http\Middleware\RoleClearance::class,
+        'permission_clearance' => \App\Http\Middleware\PermissionClearance::class,
         'user_clearance' => \App\Http\Middleware\UserClearance::class,
         'position_clearance' => \App\Http\Middleware\PositionClearance::class,
         'department_clearance' => \App\Http\Middleware\DepartmentClearance::class,
