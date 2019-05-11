@@ -16,7 +16,11 @@ class RegionClearance
         } else {
           if (Auth::user()->hasAnyPermission('Create Regions',
                                              'Edit Regions',
-                                             'Delete Regions')) {
+                                             'Delete Regions',
+                                             'Show Branches',
+                                             'Create Branches',
+                                             'Edit Branches',
+                                             'Delete Branches')) {
             return $next($request);
           } else {
             return response()->json('Forbidden', 403);
