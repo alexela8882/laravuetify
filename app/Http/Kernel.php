@@ -69,7 +69,6 @@ class Kernel extends HttpKernel
         'position_clearance' => \App\Http\Middleware\PositionClearance::class,
         'department_clearance' => \App\Http\Middleware\DepartmentClearance::class,
         'user_employment_clearance' => \App\Http\Middleware\UserEmploymentClearance::class,
-        'authorization_clearance' => \App\Http\Middleware\AuthorizationClearance::class,
         'branch_clearance' => \App\Http\Middleware\BranchClearance::class,
         'bsched_clearance' => \App\Http\Middleware\BranchScheduleClearance::class,
         'region_clearance' => \App\Http\Middleware\RegionClearance::class,
