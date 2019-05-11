@@ -32,6 +32,27 @@ class PermissionsTableSeeder extends Seeder
             'guard_name' => 'api',
         ]);
 
+        // Permissions - Admin
+        DB::table('permissions')->insert([
+            'name' => 'Show Permissions',
+            'guard_name' => 'api',
+        ]);
+
+        DB::table('permissions')->insert([
+            'name' => 'Create Permissions',
+            'guard_name' => 'api',
+        ]);
+
+        DB::table('permissions')->insert([
+            'name' => 'Edit Permissions',
+            'guard_name' => 'api',
+        ]);
+
+        DB::table('permissions')->insert([
+            'name' => 'Delete Permissions',
+            'guard_name' => 'api',
+        ]);
+
         // Users - Admin
         DB::table('permissions')->insert([
             'name' => 'Show Users',

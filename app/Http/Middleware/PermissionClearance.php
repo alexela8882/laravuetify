@@ -29,7 +29,7 @@ class PermissionClearance
     }
 
     // Create
-    if ($request->route()->getName() === 'role.store') {
+    if ($request->route()->getName() === 'permission.store') {
       if (!Auth::user()->hasPermissionTo('Create Permissions')) {
         return response()->json('Forbidden', 418);
       } else {
@@ -38,7 +38,7 @@ class PermissionClearance
     }
 
     // Edit/Update
-    if ($request->route()->getName() === 'role.update') {
+    if ($request->route()->getName() === 'permission.update') {
       if (!Auth::user()->hasPermissionTo('Edit Permissions')) {
         return response()->json('Forbidden', 418);
       } else {
@@ -47,7 +47,7 @@ class PermissionClearance
     }
 
     // Delete
-    if ($request->route()->getName() === 'role.delete') {
+    if ($request->route()->getName() === 'permission.delete') {
       if (!Auth::user()->hasPermissionTo('Delete Permissions')) {
         return response()->json('Forbidden', 418);
       } else {
