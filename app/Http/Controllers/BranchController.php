@@ -84,7 +84,7 @@ class BranchController extends Controller
       $validator = Validator::make($req->all(), [
         'name' => 'required|unique:branches,name,'.$req->id,
         'region' => 'required',
-        'machine_number' => 'required|unique:branches,machine_number',
+        'machine_number' => 'required|unique:branches,machine_number,'.$req->id,
         'whscode' => 'required|unique:branches,whscode,'.$req->id,
       ]);
 
