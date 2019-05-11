@@ -51,6 +51,21 @@ class BranchClearance
       }
     }
 
+    // for users that requires branches
+    if ($request->route()->getName() === 'users') {
+      if (Auth::user()->hasPermissionTo('Show Branches')) {
+        return $next($request);
+      } else {
+        if (Auth::user()->hasAnyPermission('Create Users',
+                                           'Edit Users',
+                                           'Delete Users')) {
+          return $next($request);
+        } else {
+          return response()->json('Forbidden', 403);
+        }
+      }
+    }
+
     return $next($request);
   }
 }
