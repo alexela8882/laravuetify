@@ -92,7 +92,7 @@ Route::group(['prefix' => 'roles', 'middleware' => ['jwt.auth', 'role_clearance'
 
 });
 
-Route::group(['prefix' => 'permissions', 'middleware' => ['jwt.auth', 'authorization_clearance']], function () {
+Route::group(['prefix' => 'permissions', 'middleware' => ['jwt.auth', 'permission_clearance']], function () {
 
 	Route::get('/', 'PermissionController@all')->name('permissions');
 	Route::post('/', 'PermissionController@store')->name('permission.store');
