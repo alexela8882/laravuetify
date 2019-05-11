@@ -16,7 +16,11 @@ class RoleClearance
       } else {
         if (Auth::user()->hasAnyPermission('Create Roles',
                                            'Edit Roles',
-                                           'Delete Roles')) {
+                                           'Delete Roles',
+                                           'Show Users',
+                                           'Create Users',
+                                           'Edit Users',
+                                           'Delete Users')) {
           return $next($request);
         } else {
           return response()->json('Forbidden', 403);
