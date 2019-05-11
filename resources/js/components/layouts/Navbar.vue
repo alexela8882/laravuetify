@@ -2,7 +2,6 @@
 	<nav>
 	  <v-navigation-drawer
 	  	app
-	  	floating
 	  	:value="drawer"
 	  	:mini-variant.sync="mini">
 	    <v-toolbar flat class="transparent">

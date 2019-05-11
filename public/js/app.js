@@ -2074,7 +2074,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -43154,12 +43153,7 @@ var render = function() {
       _c(
         "v-navigation-drawer",
         {
-          attrs: {
-            app: "",
-            floating: "",
-            value: _vm.drawer,
-            "mini-variant": _vm.mini
-          },
+          attrs: { app: "", value: _vm.drawer, "mini-variant": _vm.mini },
           on: {
             "update:miniVariant": function($event) {
               _vm.mini = $event
@@ -43455,7 +43449,7 @@ var render = function() {
     [
       _c(
         "v-toolbar",
-        { attrs: { flat: "", app: "" } },
+        { attrs: { app: "" } },
         [
           _c("v-toolbar-side-icon", {
             on: {

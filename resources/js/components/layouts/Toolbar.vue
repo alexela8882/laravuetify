@@ -1,6 +1,6 @@
 <template>
 	<nav>
-	  <v-toolbar flat app>
+	  <v-toolbar app>
 	    <v-toolbar-side-icon @click.stop="drawer"></v-toolbar-side-icon>
 	    <v-toolbar-title></v-toolbar-title>
 	    <v-spacer></v-spacer>
