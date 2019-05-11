@@ -1,3 +1,7 @@
+<img src="/public/images/preview.png" alt="Laravuetify preview image"/>
+
+[![NPM version][npm-image]][npm-url]
+
 # About
 
 Laravuetify is a ready to use Laravel app with VueJS, Vuetify, VueRouter & Vuex. It also uses jwt-auth for user authentication: https://jwt-auth.readthedocs.io/en/develop/
@@ -55,3 +59,7 @@ $ php artisan serve
 All Done!
 
 You can now visit your website in [http://localhost:8000](http://localhost:8000).
+
+# License
+
+[MIT](https://github.com/alexela8882/laravuetify/LICENSE)
