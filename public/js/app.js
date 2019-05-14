@@ -2065,19 +2065,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      mini: false,
       links: [{
         text: 'Home',
         icon: 'home',
@@ -43152,17 +43142,7 @@ var render = function() {
     [
       _c(
         "v-navigation-drawer",
-        {
-          attrs: { app: "", value: _vm.drawer, "mini-variant": _vm.mini },
-          on: {
-            "update:miniVariant": function($event) {
-              _vm.mini = $event
-            },
-            "update:mini-variant": function($event) {
-              _vm.mini = $event
-            }
-          }
-        },
+        { attrs: { app: "", value: _vm.drawer } },
         [
           _c(
             "v-toolbar",
@@ -43183,27 +43163,6 @@ var render = function() {
                       _c(
                         "v-list-tile-content",
                         [_c("v-list-tile-title", [_vm._v("LARAVUETIFY")])],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-tile-action",
-                        [
-                          _c(
-                            "v-btn",
-                            {
-                              attrs: { icon: "" },
-                              on: {
-                                click: function($event) {
-                                  $event.stopPropagation()
-                                  _vm.mini = !_vm.mini
-                                }
-                              }
-                            },
-                            [_c("v-icon", [_vm._v("chevron_left")])],
-                            1
-                          )
-                        ],
                         1
                       )
                     ],
