@@ -16,7 +16,11 @@ class PositionClearance
       } else {
         if (Auth::user()->hasAnyPermission('Create Positions',
                                            'Edit Positions',
-                                           'Delete Positions')) {
+                                           'Delete Positions',
+                                           'Show User Employments',
+                                           'Create User Employments',
+                                           'Edit User Employments',
+                                           'Delete User Employments')) {
           return $next($request);
         } else {
           return response()->json('Forbidden', 403);
