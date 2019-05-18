@@ -1,5 +1,6 @@
 const actions = {
 	fetchRoles (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/roles')
 			.then(response => {
 				context.commit('SET_ROLE', response.data)

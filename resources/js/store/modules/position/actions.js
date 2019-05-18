@@ -2,6 +2,7 @@ import router from '../../../router/index'
 
 const actions = {
 	fetchPositions (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/positions')
 			.then(response => {
 				context.commit('SET_POSITION', response.data)

@@ -1,5 +1,6 @@
 const actions = {
 	fetchBranches (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/branches')
 			.then(response => {
 				context.commit('SET_BRANCH', response.data)

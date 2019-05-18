@@ -2,6 +2,7 @@ import router from '../../../router/index'
 
 const actions = {
 	fetchDepartments (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/departments')
 			.then(response => {
 				context.commit('SET_DEPARTMENT', response.data)

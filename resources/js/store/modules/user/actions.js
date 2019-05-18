@@ -2,6 +2,7 @@ import router from '../../../router/index'
 
 const actions = {
 	fetchUsers (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/users')
 			.then(response => {
 				context.commit('SET_USER', response.data)

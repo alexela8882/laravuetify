@@ -1,5 +1,6 @@
 const actions = {
 	fetchSchedules (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/bscheds')
 			.then(response => {
 				context.commit('SET_SCHEDULE', response.data)

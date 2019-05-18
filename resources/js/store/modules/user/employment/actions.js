@@ -1,5 +1,6 @@
 const actions = {
 	fetchEmployments (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/user-employments')
 			.then(response => {
 				context.commit('SET_EMPLOYMENT', response.data)

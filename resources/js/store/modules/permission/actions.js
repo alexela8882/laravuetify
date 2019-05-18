@@ -1,5 +1,6 @@
 const actions = {
 	fetchPerms (context) {
+		context.commit('LOADING_STATUS', true, { root: true }) // start loading
 		axios.get('api/permissions')
 			.then(response => {
 				context.commit('SET_PERM', response.data)
