@@ -2563,6 +2563,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2800,6 +2807,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('bsched/fetchSchedules');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('branch/fetchBranches');
+      this.$store.dispatch('region/fetchRegions');
+      this.$store.dispatch('bsched/fetchSchedules');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -2877,6 +2889,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3182,6 +3201,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('bsched/fetchSchedules');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('bsched/fetchSchedules');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -3252,6 +3274,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3503,6 +3532,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('department/fetchDepartments');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('department/fetchDepartments');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -3572,6 +3604,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3823,6 +3862,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('perm/fetchPerms');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('perm/fetchPerms');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -3892,6 +3934,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4143,6 +4192,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('position/fetchPositions');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('position/fetchPositions');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -4212,6 +4264,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4464,6 +4523,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('region/fetchRegions');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('region/fetchRegions');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -4534,6 +4596,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4858,6 +4927,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('perm/fetchPerms');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('role/fetchRoles');
+      this.$store.dispatch('perm/fetchPerms');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -5008,6 +5081,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5424,6 +5504,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('role/fetchRoles');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('user/fetchUsers');
+      this.$store.dispatch('branch/fetchBranches');
+      this.$store.dispatch('role/fetchRoles');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -5513,6 +5598,13 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5958,6 +6050,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.$store.dispatch('department/fetchDepartments');
   },
   methods: {
+    refreshData: function refreshData() {
+      this.$store.dispatch('employment/fetchEmployments');
+      this.$store.dispatch('branch/fetchBranches');
+      this.$store.dispatch('position/fetchPositions');
+      this.$store.dispatch('department/fetchDepartments');
+    },
     onResize: function onResize() {
       if (window.innerWidth < 769) this.$store.dispatch('isMobile', true);else this.$store.dispatch('isMobile', false);
     },
@@ -44106,6 +44204,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -44830,6 +44963,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -44969,7 +45137,11 @@ var render = function() {
                                                         on: {
                                                           click: function(
                                                             $event
-                                                          ) {}
+                                                          ) {
+                                                            return _vm.editSchedule(
+                                                              props.item
+                                                            )
+                                                          }
                                                         }
                                                       },
                                                       on
@@ -45598,6 +45770,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -45735,7 +45942,11 @@ var render = function() {
                                                         on: {
                                                           click: function(
                                                             $event
-                                                          ) {}
+                                                          ) {
+                                                            return _vm.editDepartment(
+                                                              props.item
+                                                            )
+                                                          }
                                                         }
                                                       },
                                                       on
@@ -46098,6 +46309,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -46235,7 +46481,11 @@ var render = function() {
                                                         on: {
                                                           click: function(
                                                             $event
-                                                          ) {}
+                                                          ) {
+                                                            return _vm.editPerm(
+                                                              props.item
+                                                            )
+                                                          }
                                                         }
                                                       },
                                                       on
@@ -46598,6 +46848,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -46735,7 +47020,11 @@ var render = function() {
                                                         on: {
                                                           click: function(
                                                             $event
-                                                          ) {}
+                                                          ) {
+                                                            return _vm.editPosition(
+                                                              props.item
+                                                            )
+                                                          }
                                                         }
                                                       },
                                                       on
@@ -47098,6 +47387,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -47237,7 +47561,11 @@ var render = function() {
                                                         on: {
                                                           click: function(
                                                             $event
-                                                          ) {}
+                                                          ) {
+                                                            return _vm.editRegion(
+                                                              props.item
+                                                            )
+                                                          }
                                                         }
                                                       },
                                                       on
@@ -47600,6 +47928,41 @@ var render = function() {
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
                       ),
                       _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
+                      ),
+                      _vm._v(" "),
                       _c("v-spacer"),
                       _vm._v(" "),
                       _c("v-text-field", {
@@ -47792,7 +48155,11 @@ var render = function() {
                                                         on: {
                                                           click: function(
                                                             $event
-                                                          ) {}
+                                                          ) {
+                                                            return _vm.editRole(
+                                                              props.item
+                                                            )
+                                                          }
                                                         }
                                                       },
                                                       on
@@ -48328,6 +48695,41 @@ var render = function() {
                           ])
                         },
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
                       ),
                       _vm._v(" "),
                       _c("v-spacer"),
@@ -49032,6 +49434,41 @@ var render = function() {
                           ])
                         },
                         [_vm._v(" "), _c("span", [_vm._v("Export")])]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-tooltip",
+                        {
+                          attrs: { bottom: "" },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "activator",
+                              fn: function(ref) {
+                                var on = ref.on
+                                return [
+                                  _c(
+                                    "v-btn",
+                                    _vm._g(
+                                      {
+                                        attrs: {
+                                          flat: "",
+                                          small: "",
+                                          icon: "",
+                                          color: "grey darken-2"
+                                        },
+                                        on: { click: _vm.refreshData }
+                                      },
+                                      on
+                                    ),
+                                    [_c("v-icon", [_vm._v("autorenew")])],
+                                    1
+                                  )
+                                ]
+                              }
+                            }
+                          ])
+                        },
+                        [_vm._v(" "), _c("span", [_vm._v("Refresh")])]
                       ),
                       _vm._v(" "),
                       _c("v-spacer"),

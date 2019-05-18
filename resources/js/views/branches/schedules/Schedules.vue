@@ -46,6 +46,13 @@
               <span>Export</span>
             </v-tooltip>
 
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-btn flat small icon color="grey darken-2" v-on="on" @click="refreshData"><v-icon>autorenew</v-icon></v-btn>
+              </template>
+              <span>Refresh</span>
+            </v-tooltip>
+
             <v-spacer></v-spacer>
             <v-text-field
               v-model="search"
@@ -96,7 +103,7 @@
                         small
                         class="mr-2"
                         v-on="on"
-                        @click="">
+                        @click="editSchedule(props.item)">
                         file_copy
                       </v-icon>
                     </template>
@@ -306,6 +313,10 @@
     },
 
     methods: {
+      refreshData () {
+        this.$store.dispatch('bsched/fetchSchedules')
+      },
+
       onResize() {
         if (window.innerWidth < 769)
           this.$store.dispatch('isMobile', true)
